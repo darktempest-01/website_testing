@@ -49,18 +49,23 @@ h1 {
 }
 
 /* Abrundung und Schatten für das Pokémon-Bild */
+/* Volle Breite für maximale Erkennbarkeit der Grafik */
 .image-wrapper {
     background-color: #1a1a1e;
     border: 1px solid #2a2a32;
     border-radius: 12px;
-    padding: 16px;
+    padding: 8px;                /* Weniger Rand, mehr Platz fürs Bild */
     display: flex;
     justify-content: center;
+    align-items: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;            /* Verhindert, dass das Bild übersteht */
 }
 
 img {
-    max-width: 100%;
+    width: 100%;                 /* Zwingt das Bild, die Box komplett auszufüllen */
+    max-width: 100%; 
     height: auto;
-    border-radius: 6px;          /* Auch das Bild kriegt leicht runde Ecken */
+    border-radius: 8px;
+    image-rendering: -webkit-optimize-contrast; /* Schärft das Bild in einigen Browsern nach */
 }
