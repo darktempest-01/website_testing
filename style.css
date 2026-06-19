@@ -22,6 +22,9 @@ body {
     font-size: 1.1rem;
     margin-bottom: 20px;
 }
+h1 {
+    color: #50F55B ; 
+}
 
 /* Die Text-Box im schicken Karten-Design */
 .content-box {
